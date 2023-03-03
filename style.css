@@ -1,0 +1,49 @@
+*{
+    margin:0 auto;
+    padding:0;
+    box-sizing: border-box;
+}
+.mynav
+{
+    background-color: black;
+}
+.mynav a{
+    color:white;
+    font-size: 16;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding:15px 20px;
+    display: inline-block;
+}
+.banner{
+    background-color:red ;
+    display:flex;
+    flex-direction: row;
+
+}
+.box1{
+    background-color:yellow ;
+    width:50%;
+    height:300px;
+}
+.box2{
+    background-color: pink;
+    width:50%;
+    height:300px;
+}
+.mynav a:hover{
+    background-color: white;
+    color:black;
+}
+@media screen and (max-width:600px) {
+    .mynav a
+    {
+       display:block;
+        text-align: center;
+    }
+    .banner{
+        flex-direction: column;
+    }
+    .box1,.box2{
+        width:100%;
+    }
+}
